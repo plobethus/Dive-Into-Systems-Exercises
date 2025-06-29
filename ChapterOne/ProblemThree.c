@@ -202,7 +202,7 @@ int main(){
          *      }
          */
 
-        printf(3.17);
+        printf("3.17\n");
         
         for (i = 5; i < 10; i += 2) {
                 printf("yay!\n");
