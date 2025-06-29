@@ -106,7 +106,7 @@
  *
  *  6
  *
- *  3.111 How many times does this loop print "tweet"?
+ *  3.11 How many times does this loop print "tweet"?
  *
  *  int i; 
  *  i = 3;
@@ -116,15 +116,100 @@
  *      }
  *
  *  3
- * Write a loop that will print out the numbes from 100 to 200 counting by 5s */
+ * Write a loop that will print out the numbes from 100 to 200 counting by 5s 
+ *
+ * 3. 13 What is wrong with the code, it is supposed to print moo 10 times 
+ *
+ * int i;
+ * for (i = 0; i < 10; i--) {
+ * printf("moo\n");
+ * }
+ * It prints moo more than 10 times
+ *
+ * 3.14 True or false following code always prints 0 through 9 
+ *
+ * int i;
+ * while (i < 10) {
+ * printf("%d\n", i);
+ * i++;
+ * }
+ *
+ * False i is uninitialized, no guarantee how many times this loop will print 
+ * 
+ * 3.15 What is wrong, it is supposed to print numbers 0 through 9 
+ * int love;
+ * love = 0;
+ * while (love < 10) {
+ * printf("%d\n", love);
+ * } 
+ *
+ * There is no increment for love, this is an infinite loop. 
+ * 
+ * 3.18 These two blocks of code print the same thing true or false
+ *
+ * int x, y;
+ *
+ * x = 10;
+ * y = 20; 
+ *
+ * if ((x >= 10) && (y < 30)) {
+ *      printf("Roar\n");
+ *      y++
+ *      }
+ *
+ * while ((x >= 10) && (y < 30)) {
+ *      printf("Roar\n");
+ *      y++
+ *      }
+ *
+ * false, first loop will only print once while loop will print as long as conditions are met.
+ */ 
 
 #include <stdio.h>
 
 int main(){
-        int i = 100;
+        // For problem 3.12
+        printf("3.12\n");
+
+        int i;
 
         for (i = 100; i < 205; i += 5){
                 printf("%d\n", i);
                 }
+        // End of 3.12
+        
+        /* 3.16 Rewrite the following for loop as a while loop
+         * int i;
+         * for (i = 0; i < 10; i++){
+         *      printf("Hello\n");
+         *}
+         */
+        printf("3.16\n");
+        i = 0;
+
+        while (i < 10) {
+                printf("Hello\n");
+                i++;
+                }
+        //End of 3.16
+        
+        /* 3.17 Rewrite the following while loop as a for loop
+         * int i; 
+         * i = 5;
+         * while (i < 10) {
+         *      printf("yay!\n");
+         *      i = i + 2;
+         *      }
+         */
+
+        printf(3.17);
+        
+        for (i = 5; i < 10; i += 2) {
+                printf("yay!\n");
+                }
+        //End of 3.17
+
+
+       
 return 0;
 }
